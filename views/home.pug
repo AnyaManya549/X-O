@@ -1,0 +1,57 @@
+doctype html 
+html(lang = 'ru')
+    head 
+        link(rel="stylesheet", href="style.css")
+        meta(charset = 'UTF-8')
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="shortcut icon", href="logo.png", type="image/x-icon")
+        title Крестики-нолики Online
+
+    div.dark-screen
+    
+    form(method="post")
+        h2.log Вход/Регистрация
+        p Логин: 
+            input(type="text", name="login")#login
+        p Пароль: 
+            input(type = "password" name="password")#password
+        p#alert= alert
+        input(type = "submit" value = "Войти/Зарегестрироваться" name = 'log').log
+        input(type = "button" value = "Закрыть" name = 'log')
+
+    body  
+        header
+            h1#navigation.header Крестики-нолики Online            
+            button.header= Reg_   
+            button.header= In_ 
+        
+        button#test Проверка  
+             
+        main
+            section.rating 
+                h1 Рейтинг
+                    table.rating
+                        tr
+                            th.index №
+                            th.name Имя
+                            th.koef %
+
+            section.game 
+                h1 Присоединиться к игре
+                //div.game   
+                table.game
+                    tr
+                        //th.index № Комнаты
+                        th.name Имя
+             
+
+            button.new_game Начать новую игру    
+        footer
+            p &copy; 2024 Мой второй сайт
+
+
+
+
+
+
+script(src="home.js") 

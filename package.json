@@ -1,0 +1,20 @@
+{
+  "name": "x_o",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ann",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "pug": "^3.0.3",
+    "url": "^0.11.4",
+    "ws": "^8.18.0"
+  }
+}
